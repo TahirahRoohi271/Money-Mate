@@ -1,0 +1,162 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f9fd;
+
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+
+h3 {
+  color: #00218e;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.input-container input[type="date"],
+.input-container input[type="text"],
+.input-container input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-container input[type="date"] {
+  font-size: 14px;
+}
+
+.add-button {
+  background-color: #587ef4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #4569d4;
+}
+
+.output-container {
+  margin-top: 24px;
+}
+
+.expense-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+}
+
+.expense-actions button {
+  background-color: #587ef4;
+  border: 3px solid #4569d4;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 8px;
+  transition: color 0.3s;
+  padding: 10px;
+}
+
+.label {
+  color: #002bab;
+  font-weight: bold;
+}
+
+/* Style the Total Expense section */
+.total-expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+/* Style the Total Amount */
+#total-amount {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  .input-container input[type="date"],
+  .input-container input[type="text"],
+  .input-container input[type="number"] {
+    font-size: 14px;
+  }
+  .add-button {
+    font-size: 14px;
+  }
+  .expense-entry {
+    flex-direction: column;
+    text-align: center;
+  }
+  .expense-actions {
+    margin-top: 8px;
+  }
+  .total-expense {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Style each expense entry */
+.expense-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+}
+
+/* Style the expense details */
+.expense-details {
+  flex: 1; /* Allow the details to expand and fill available space */
+  margin-right: 10px; /* Add margin between date, item, and amount */
+}
+
+/* Style the Edit and Delete buttons */
+.expense-actions button {
+  background-color: #587ef4;
+  border: 3px solid #627fd5;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 8px;
+  transition: color 0.3s;
+  padding: 10px;
+}
+

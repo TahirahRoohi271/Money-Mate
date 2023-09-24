@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Money Mate</title>
+  <!-- Add your CSS stylesheet here for styling -->
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.1/dist/sweetalert2.min.css"
+  />
+</head>
+<body class="light-mode">
+  <div class="wrapper">
+    <div class="container">
+      <!-- Date, Item, and Amount Input -->
+      <div class="input-container">
+        <h3>Add Expense</h3>
+        <input type="date" id="expense-date" />
+        <input type="text" id="expense-item" placeholder="Enter Item" />
+        <input type="number" id="expense-amount" placeholder="Enter Amount" />
+        <button class="add-button" id="add-expense">Add Expense</button>
+      </div>
+      <!-- Expenses List -->
+      <div class="output-container">
+        <h3>Expenses</h3>
+        <ul id="expense-list"></ul>
+        <div class="total-expense">
+          <p>Total</p>
+          <span id="total-amount">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add your JavaScript file here -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.1/dist/sweetalert2.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
